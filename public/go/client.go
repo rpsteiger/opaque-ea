@@ -111,7 +111,7 @@ func setup(divID string) *ohttp.ClientConfig {
 	logger := log.New(&DOMWriter{divID: divID}, "", 0)
 
 	return &ohttp.ClientConfig{
-		Domain:      "opaque.research.cloudflare.com",
+		Domain:      "127.0.0.1:8080",
 		Logger:      logger,
 		Ciphersuite: oprf.OPRFP256,
 	}
