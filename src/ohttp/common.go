@@ -28,7 +28,7 @@ const (
 	// SessionIDLength represents the lenght of the session ID.
 	SessionIDLength = 32
 
-	httpsPrefix = "https://"
+	httpsPrefix = "http://"
 
 	// error messages to expose to user
 
