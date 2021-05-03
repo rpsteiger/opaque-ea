@@ -127,7 +127,7 @@ func makeServerFromRouter(rtr *mux.Router, isLocal bool) *http.Server {
 	if isLocal {
 		// See: https://github.com/rs/cors
 		// https://flaviocopes.com/golang-enable-cors/
-		handler := cors.Default().Handler(rtr)
+		handler := cors.AllowAll().Handler(rtr)
 		return &http.Server{
 			ReadTimeout:  5 * time.Second,
 			WriteTimeout: 5 * time.Second,
